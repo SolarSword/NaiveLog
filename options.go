@@ -31,7 +31,7 @@ var LevelNameMap = map[Level]string{
 
 type options struct {
 	output        io.Writer
-	level         Level // log level
+	level         Level // minimum log level not to be blocked
 	stdLevel      Level // standard log level
 	formatter     Formatter
 	disableCaller bool
